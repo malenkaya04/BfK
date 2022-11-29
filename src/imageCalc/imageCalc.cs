@@ -12,7 +12,7 @@ public class imageCalc{
        Console.WriteLine("Dateigröße in der Farbtiefe "+ colorDepth[0]+"\n");
        Console.WriteLine("Dateigröße in Bit : "+Convert.ToString(imageSizeBit));
        Console.WriteLine("Dateigröße in Byte : "+Convert.ToString(imageSizeByte));
-       Console.WriteLine("Dateigröße in Kilobyte : "+Convert.ToString(imageSizeByte));
+       Console.WriteLine("Dateigröße in Kilobyte : "+Convert.ToString(imageSizeKB));
     }
     
     public static int imageSizeCalc(int colorDepth ) {
