@@ -8,6 +8,6 @@ public class mainClass {
 	public static unsafe void pointer () {
 		int a = 5;
 		int* b = &a;
-		Console.WriteLine("0x"+&b);
+		Console.WriteLine("0x"+Convert.ToString(&b));
 	}
 }
