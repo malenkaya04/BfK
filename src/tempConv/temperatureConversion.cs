@@ -9,8 +9,4 @@ public class converterToF {
     public static double convert(double tempInC) {
         return ((tempInC * 1.8) +32);
     }
-
-    public static void formatedOutput() {
-        Console.WriteLine("---- Heizölrechnung ----");
-    }
 }
