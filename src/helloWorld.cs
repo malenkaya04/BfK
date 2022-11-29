@@ -5,5 +5,6 @@ public class testClass {
 		//Random comment
 		//Second comment
 		//Third line
+		//4th line
 	}
 }
