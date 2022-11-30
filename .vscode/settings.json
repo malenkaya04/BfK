@@ -1,8 +1,0 @@
-{
-    "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
-    "editor.fontSize": 12,
-    "editor.fontWeight": "normal",
-    "editor.formatOnSave": false,
-    "terminal.integrated.fontSize": 16,
-    "workbench.colorTheme": "Hacker X - Underdark Hacker Theme"
-}
