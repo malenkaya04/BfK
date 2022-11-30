@@ -1,17 +1,17 @@
 using System;
 public class imageCalc{
     public static void Main(String[] args) {
-        //Array solution is legacy; Needs refactoring
-       String[] colorDepth = new String[2];
+        //Prompting user for color depth information; declaring and initializing variables with console input
         Console.WriteLine("Please ente a name for the color depth!");
-        colorDepth[0] = Console.ReadLine();
+        var colorDepthName = Console.ReadLine();
         Console.WriteLine("Please enter a color depth!");
-        colorDepth[1] = Console.ReadLine();
-        //Creating some more variables to waste more RAM
-       float imageSizeBit = imageSizeCalc(Convert.ToInt16(colorDepth[1]));
+        var colorDepth = Console.ReadLine();
+        //Creating some more variables to waste more RAM. required by task specifications
+       float imageSizeBit = imageSizeCalc(Convert.ToInt16(colorDepth));
        float imageSizeByte = imageSizeBit/8;
        float imageSizeKB = imageSizeByte/1024;
-       Console.WriteLine("Dateigröße in der Farbtiefe "+ colorDepth[0]+"\n");
+       //output resulst to terminal
+       Console.WriteLine("Dateigröße in der Farbtiefe "+ Convert.ToString(colorDepthName)+"\n");
        Console.WriteLine("Dateigröße in Bit : "+Convert.ToString(imageSizeBit));
        Console.WriteLine("Dateigröße in Byte : "+Convert.ToString(imageSizeByte));
        Console.WriteLine("Dateigröße in Kilobyte : "+Convert.ToString(imageSizeKB));
