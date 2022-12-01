@@ -2,7 +2,7 @@ using System;
 public class imageCalc{
     public static void Main(String[] args) {
         //Prompting user for color depth information; declaring and initializing variables with console input
-        Console.WriteLine("Please ente a name for the color depth!");
+        Console.WriteLine("Please enter a name for the color depth!");
         var colorDepthName = Console.ReadLine();
         Console.WriteLine("Please enter a color depth!");
         var colorDepth = Console.ReadLine();
