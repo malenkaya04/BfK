@@ -11,10 +11,10 @@ public class imageCalc{
        float imageSizeByte = imageSizeBit/8;
        float imageSizeKB = imageSizeByte/1024;
        //output results to terminal
-       Console.WriteLine("Dateigröße in der Farbtiefe "+ Convert.ToString(colorDepthName)+"\n");
-       Console.WriteLine("Dateigröße in Bit : "+Convert.ToString(imageSizeBit));
-       Console.WriteLine("Dateigröße in Byte : "+Convert.ToString(imageSizeByte));
-       Console.WriteLine("Dateigröße in Kilobyte : "+Convert.ToString(imageSizeKB));
+       Console.WriteLine("File in color depth"+ Convert.ToString(colorDepthName)+"\n");
+       Console.WriteLine("File size in Bit : "+Convert.ToString(imageSizeBit));
+       Console.WriteLine("File size in Byte : "+Convert.ToString(imageSizeByte));
+       Console.WriteLine("File size in Kilobyte : "+Convert.ToString(imageSizeKB));
     }
     
     public static int imageSizeCalc(int colorDepth ) {
