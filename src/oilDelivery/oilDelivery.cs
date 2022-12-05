@@ -29,14 +29,14 @@ public class converterToF {
             Main();
         }
     }
-    //helper function to for formated output
+    //helper method for formated output
     public static void formatedOutput(String customerName, double amountDelivered, double oilPrice) {
         //Final values get calculated from params and constant for sales tax
-        Console.WriteLine("---- Oil Delivery  ----");
+        Console.WriteLine("---- Oil Delivery LLC ----");
         Console.WriteLine("Customer name : "+customerName);
         Console.WriteLine("Delivered Amount : " +amountDelivered+" Liter");
         Console.WriteLine("Net value :" +Convert.ToString(amountDelivered*oilPrice)+ " €");
-        Console.WriteLine("Salex tax :"+Convert.ToString(amountDelivered*oilPrice*0.19)+ " €");
-        Console.WriteLine("Gros value including sales tax : "+Convert.ToString(amountDelivered*oilPrice*1.19)+ " €");
+        Console.WriteLine("Sales tax :"+Convert.ToString(amountDelivered*oilPrice*0.19)+ " €");
+        Console.WriteLine("Gross value including sales tax : "+Convert.ToString(amountDelivered*oilPrice*1.19)+ " €");
     }
 }
