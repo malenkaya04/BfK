@@ -7,9 +7,9 @@ public class imageCalc{
         Console.WriteLine("Please enter a color depth!");
         var colorDepth = Console.ReadLine();
         //Creating some more variables to waste more RAM. required by task specifications
-       float imageSizeBit = imageSizeCalc(Convert.ToInt16(colorDepth));
+       float imageSizeBit = imageSizeCalc(Convert.ToInt32(colorDepth));
        float imageSizeByte = imageSizeBit/8;
-       float imageSizeKB = imageSizeByte/1024;
+       double imageSizeKB = Math.Round((imageSizeByte/1024), 3);
        //output results to terminal
        Console.WriteLine("File in color depth"+ Convert.ToString(colorDepthName)+"\n");
        Console.WriteLine("File size in Bit : "+Convert.ToString(imageSizeBit));
