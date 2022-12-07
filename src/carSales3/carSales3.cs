@@ -13,7 +13,7 @@ public class carSales3 {
 		netValue = Convert.ToDouble(Console.ReadLine());
 		
 		switch(isEV) {
-			case "ja": case "yes":
+			case "yes": case "ja":
 				Console.WriteLine("Vehicle is an EV");
 				Console.WriteLine("EV price reduction is : " +netValue*0.2);
 				if (netValue >= 50000) {
