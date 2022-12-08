@@ -3,14 +3,20 @@ public class carSales3 {
 	public static void Main() {
 		
 		string isEV;
-		double netValue;
-		
+		double netValue = 0;
+
 		Console.WriteLine("Is the vehicle an EV?");
 		isEV = Console.ReadLine();
 		isEV = isEV.ToLower();
 
+		try {
 		Console.WriteLine("Please enter the net value of the car");
 		netValue = Convert.ToDouble(Console.ReadLine());
+		}
+		catch (Exception) {
+			Console.WriteLine("Please enter a valid net value");
+			Main();
+		}
 		
 		switch(isEV) {
 			case "yes": case "ja":
